@@ -1,0 +1,138 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+
+\title{}
+\date{}
+
+\begin{document}
+
+% ================= TITLE PAGE =================
+\begin{center}
+{\LARGE \bfseries Designing a Rational and Intelligent PACS System}\\[0.4em]
+{\large Applying Agent-Based AI Concepts to Medical Image Management}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{center}
+\begin{tabular}{ll}
+\textbf{Name:} & Devesh \\
+\textbf{Roll Number:} & 24111014 \\
+\textbf{Department:} & Biomedical Engineering \\
+\textbf{Institution:} & NIT Raipur \\
+\textbf{Course:} & AI \& ML \\
+\textbf{Faculty:} & Prof. Saurabh Gupta \\
+\textbf{Date:} & \today \\
+\end{tabular}
+\end{center}
+
+\vspace{1cm}
+\hrule
+\vspace{0.5cm}
+
+% ================= INTRODUCTION =================
+\section*{Introduction}
+
+A PACS (Picture Archiving and Communication System) is basically the system hospitals use to store, retrieve, and manage medical images like X-rays, CT scans, MRIs, and ultrasounds. This assignment looks at PACS through the lens of the agent-based AI concepts we've been covering -- rationality, intelligence, semantics, environment, complexity, and agent behaviour -- and tries to work out what a "smart" version of this system would actually look like.
+
+% ================= Q1 =================
+\section{How can we make a rational PACS system?}
+
+A rational agent is one that picks the action expected to give the best outcome, based on the information it has. For a PACS system, that would mean:
+
+\begin{itemize}[noitemsep]
+    \item Store and organize medical images like X-rays, CT scans, MRI and ultrasound.
+    \item Use patient history and image data to make decisions based on available information.
+    \item Use AI models to detect abnormalities and support doctors in diagnosis.
+    \item Choose the action that gives the best expected result, such as flagging a suspicious scan.
+    \item Keep patient safety and accuracy as the main priorities.
+\end{itemize}
+
+% ================= Q2 =================
+\section{How can we make it an intelligent PACS system so that it can pass the Turing Test?}
+
+For the system to feel "intelligent" rather than just automated, it would need to behave more like a human expert interacting with the data:
+
+\begin{itemize}[noitemsep]
+    \item Add AI-based image analysis for detecting diseases or abnormalities.
+    \item Allow the system to understand simple natural-language queries from doctors.
+    \item Make it explain its findings instead of only giving a prediction.
+    \item Learn from previous cases and improve its performance.
+    \item Provide responses similar to how a medical professional would interpret and discuss an image.
+    \item Combine medical images with patient information for better decisions.
+\end{itemize}
+
+% ================= Q3 =================
+\section{What kind of semantics should we have in our PACS system?}
+
+Semantics here basically means giving the raw data actual meaning the system can reason about:
+
+\begin{itemize}[noitemsep]
+    \item Medical terminology such as organs, diseases, lesions and anatomical structures.
+    \item Image-related semantics such as modality, body part, image quality and abnormality.
+    \item Patient-related information such as age, symptoms and clinical history.
+    \item Relationships between findings, for example, "lung nodule $\rightarrow$ possible tumor."
+    \item Standard medical coding and terminology so that different hospitals and systems can understand the data.
+\end{itemize}
+
+% ================= Q4 =================
+\section{What defines the environment of the PACS system?}
+
+\begin{itemize}[noitemsep]
+    \item Medical images from X-ray, CT, MRI, ultrasound and other imaging devices.
+    \item Patient medical records and clinical history.
+    \item Radiologists, doctors, technicians and other healthcare professionals.
+    \item Hospital information systems and electronic health records.
+    \item Image acquisition devices and medical databases.
+    \item The environment is partly observable because the system may not have all the patient's information.
+    \item It is dynamic because new images, reports and patient information can be added over time.
+\end{itemize}
+
+% ================= Q5 =================
+\section{How can we analyze the complexity of the PACS system?}
+
+\begin{itemize}[noitemsep]
+    \item Number and size of medical images being processed.
+    \item Number of patients and records stored in the system.
+    \item Complexity of AI models used for image analysis.
+    \item Processing time required for diagnosis or image retrieval.
+    \item Memory and storage requirements.
+    \item Number of users and medical devices connected to the system.
+    \item Complexity also increases when the system has to combine images, patient history and clinical information.
+\end{itemize}
+
+% ================= Q6 =================
+\section{In which situations will our PACS system work as a deterministic agent and stochastic agent?}
+
+\textbf{Deterministic agent:} when the same input always produces the same output, such as retrieving a particular patient's MRI using a patient ID.
+
+\textbf{Stochastic agent:} when the result involves uncertainty, such as predicting whether an X-ray contains pneumonia.
+
+AI-based diagnosis is generally stochastic because medical images can be unclear and different diseases can have similar appearances. So image classification and disease prediction can be treated as probabilistic decision-making rather than a fixed lookup.
+
+% ================= Q7 =================
+\section{What kind of tasks should we give to our PACS system?}
+
+\begin{itemize}[noitemsep]
+    \item Automatically classify and organize medical images.
+    \item Detect abnormalities in X-rays, CT scans and MRI images.
+    \item Highlight suspicious regions for the radiologist.
+    \item Compare current images with previous patient scans.
+    \item Retrieve relevant patient images quickly.
+    \item Generate preliminary reports from detected findings.
+    \item Prioritize urgent or abnormal cases.
+    \item Check image quality before analysis.
+    \item Assist doctors in making decisions, rather than completely replacing them.
+\end{itemize}
+
+
+\end{document}
